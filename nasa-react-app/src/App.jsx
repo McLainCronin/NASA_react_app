@@ -1,12 +1,17 @@
 import Sidebar from "./components/Sidebar"
+import Main from "./components/Main"
+import Footer from "./components/Footer"
+import {useState} from 'react'
 
 function App() {
-
+ const [showModal, setShowModal] = useState(false)
   return (
     <>
-    <Sidebar>YAYAYAYA</Sidebar>
-      <Main/>
-      <Footer/>
+    <Main/>
+    {showModal && (
+      <Sidebar/>
+      )}
+    <Footer/>
     </>
   )
 }
