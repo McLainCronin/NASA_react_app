@@ -4,14 +4,20 @@ import Footer from "./components/Footer"
 import {useState} from 'react'
 
 function App() {
- const [showModal, setShowModal] = useState(false)
+  const NASA_KEY = import.meta.env.VITE_APP_NASA_KEY
+  const [showModal, setShowModal] = useState(false)
+
+ function handleToggleModal() {
+   setShowModal(!showModal)
+ }
+
   return (
     <>
     <Main/>
     {showModal && (
-      <Sidebar/>
+      <Sidebar handleToggleModal={handleToggleModal}/>
       )}
-    <Footer/>
+    <Footer handleToggleModal={handleToggleModal} />
     </>
   )
 }
