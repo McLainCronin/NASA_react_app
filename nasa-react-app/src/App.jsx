@@ -10,6 +10,7 @@ function App() {
   
   function handleToggleModal() {
     setShowModal(!showModal)
+    console.log("Modal is now", !showModal)
   }
   
   useEffect(() => {
@@ -48,9 +49,7 @@ function App() {
   return (
     <>
     {data ? (<Main data={data}/>): (<div className="loadingState"><i className="fa-solid fa-gear"></i></div>)}
-    {showModal && (
-      <Sidebar data={data} handleToggleModal={handleToggleModal}/>
-      )}
+    <Sidebar data={data} handleToggleModal={handleToggleModal} showModal={showModal}/>
     {data && 
     (<Footer data={data} handleToggleModal={handleToggleModal} />
 
