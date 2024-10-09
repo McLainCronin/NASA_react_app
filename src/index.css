@@ -99,7 +99,7 @@ div.sidebar {
   width: 30%;
   height: 100%;
   background-color: #030615;
-  z-index: 1;
+  z-index: 1000;
   transform: translateX(100%);
   transition: transform 0.3s ease;
 }
@@ -114,7 +114,7 @@ div.sidebar.open {
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: 1;
+  z-index: 999;
   cursor: pointer;
 }
 
