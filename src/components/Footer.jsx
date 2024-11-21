@@ -8,9 +8,9 @@ export default function Footer(props) {
                 <h1>Astronomy Picture of the Day</h1>
                 <h2>{data?.title}</h2>
             </div>
-                <button onClick={handleToggleModal}>
-                    <i className="fa-solid fa-circle-info"></i>
-                </button>
+            <button onClick={handleToggleModal}>
+                <i className="fa-solid fa-circle-info" style={{ fontSize: '1.5em' }}></i>
+            </button>
         </footer>
     )
 }

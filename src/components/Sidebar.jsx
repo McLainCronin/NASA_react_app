@@ -15,7 +15,7 @@ export default function Sidebar(props) {
                         <p>{data?.explanation}</p>
                     </div>
                     <button onClick={handleToggleModal}>
-                        <i className="fa-solid fa-arrow-right-long"></i>
+                        <i className="fa-solid fa-arrow-right-long" style={{ fontSize: '1.25em' }}></i>
                     </button>
                 </div>
             </div>
